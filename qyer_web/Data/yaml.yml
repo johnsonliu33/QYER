@@ -1,0 +1,21 @@
+Contacts_Data:
+  contacts_001:
+    name: lucy
+    phone: ""
+    expect: lucy
+  contacts_002:
+    name: lili
+    phone: 1 555-555-5555
+    expect: lili
+  contacts_003:
+    name: ""
+    phone: 1 666-666-6666
+    expect: 1 666-666-6666
+  contacts_004:
+    name: "王芳"
+    phone: 1 777-777
+    expect: "王芳"
+  contacts_005:
+    name: ""
+    phone: ""
+    expect: ""

@@ -1,0 +1,25 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "failed",
+      "children" : [ {
+        "name" : "po_OpenPage",
+        "uid" : "1cb3a4c4a0ae3f73",
+        "parentUid" : "e226b8e55fc3e865aa231bef699f7a6a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1526138127253,
+          "stop" : 1526138127253,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e226b8e55fc3e865aa231bef699f7a6a"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

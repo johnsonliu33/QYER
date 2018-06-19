@@ -1,0 +1,23 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1526138127253" stop="1526138127253">
+  <description>This is the tests collection phase. Failures are modules that failed to collect.</description>
+  <name>test_collection_phase</name>
+  <title>Collection phase</title>
+  <labels/>
+  <test-cases>
+    <test-case start="1526138127253" status="broken" stop="1526138127253">
+      <name>po_OpenPage</name>
+      <failure>
+        <message>failed</message>
+        <stack-trace>ImportError while importing test module 'F:\PythonTest\qyer\qyer_web\Scripts\po_OpenPage.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+Scripts\po_OpenPage.py:2: in &lt;module&gt;
+    from qyer_web.Page.page import Page_Obj
+E   ImportError: No module named 'qyer_web'</stack-trace>
+      </failure>
+      <attachments/>
+      <labels/>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
