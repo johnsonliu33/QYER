@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 
 
-class Comm(object):
+class Commm(object):
     def __init__(self):
         self.driver = webdriver.Chrome()
         self.driver.implicitly_wait(5)
@@ -44,7 +44,9 @@ class Comm(object):
 
     # 输入
     def input_text(self, loc, text):
-        self.loca_element(loc).send_keys(text)
+        el = self.loca_element(loc)
+        el.clear()
+        el.send_keys(text)
 
     # 打开url
     def open_url(self,url):

@@ -24,7 +24,9 @@ class Comm(object):
 
     # 输入
     def input_text(self, loc, text):
-        self.loca_element(loc).send_keys(text)
+        el = self.loca_element(loc)
+        el.clear()
+        el.send_keys(text)
 
 
     def get_screen(self):
@@ -32,7 +34,6 @@ class Comm(object):
         self.driver.get_screenshot_as_file(screen_img)
         with open(screen_img,"rb") as f:
             allure.attach('错误截图',f.read(),allure.attach_type.PNG)
-
 
 
 

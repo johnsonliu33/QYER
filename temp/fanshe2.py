@@ -1,4 +1,4 @@
-# from com import com
+import temp.fanshe1
 
 """
 python的反射
