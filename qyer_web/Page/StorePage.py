@@ -1,6 +1,6 @@
 from qyer_web.Comm.common import Comm
 import qyer_web.Page
-import time
+
 
 class StorePage(Comm):
     def __init__(self,driver):
@@ -9,7 +9,6 @@ class StorePage(Comm):
 
     # 输入城市，点击搜索
     def search_city(self,city):
-        time.sleep(5)
         self.input_text(qyer_web.Page.search_city,city)
         self.click_element(qyer_web.Page.search_button)
 

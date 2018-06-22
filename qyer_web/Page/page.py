@@ -1,4 +1,6 @@
+from qyer_web.Page.FreeWalkerPage import FreeWalkerPage
 from qyer_web.Page.HomePage import HomePage
+from qyer_web.Page.OrderPage import OrderPage
 from qyer_web.Page.StorePage import StorePage
 
 
@@ -12,9 +14,9 @@ class Page_Obj:
     def store(self):
         return StorePage(self.driver)
 
-        # def login(self):
-        #     print("这是一个登陆页面")
-        #
-        # def logout(self):
-        #     print("这是一个退出页面！")
-        #
+    def free_walker(self):
+        return FreeWalkerPage(self.driver)
+
+
+    def order(self):
+        return OrderPage(self.driver)

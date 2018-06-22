@@ -1,3 +1,5 @@
+import time
+
 from temp.util import Commm
 from selenium.webdriver.support.select import Select
 
@@ -6,33 +8,42 @@ class Process(Commm):
     def process(self):
         # 打开网页
         self.open_url("http://www.QYER.com/")
+
         self.print_title()
         # 点击商城
         self.locateElement("text","商城").click()
         self.print_title()
         # 输入要去的国家
-        self.locateElement("id","zwhomeSearchText").send_keys("日本")
+        self.locateElement("id","zwhomeSearchText").send_keys("大阪")
         self.locateElement("xpath",".//*[@id='zwhomeSearchs']/form/div/button").click()
         self.print_title()
         # 选择目的地属性
         # 一般是title标签的
         self.locateElement("text","自由行").click()
-        self.locateElement("text","北京/天津").click()
-        self.locateElement("text","札幌").click()
-        self.locateElement("text","三月").click()
-        # # 选择一个产品
-        # self.locateElement("xpath","html/body/div[6]/div[1]/div[1]/div/div[2]/div[1]/h2/a").click()
-        # # self.locateElement("text","北京直飞札幌8天7晚自由行（登别洞爷湖+滑雪破冰船+温泉酒店+签证/保险/WiFi/精美路书/7*24小时行中保障）")
-        # # 选择新打开的页面
-        # self.getHandles()
-        # self.print_title()
-        #
-        # # 选择日期,提交订单
-        # # 点击22日
-        # self.locateElement("xpath",".//*[@id='app']/div/div[2]/div/div[1]/div[1]/div[2]/div/div[3]/div[4]/div[5]/div[1]").click()
-        # # 点击立即预订
-        # self.locateElement("xpath",".//*[@id='lastminuteorderform']/input").click()
-        # self.print_title()
+        # self.locateElement("text","北京/天津").click()
+        # self.locateElement("text","札幌").click()
+        self.locateElement("text","九月").click()
+
+        # 选择一个产品
+        self.locateElement("xpath",".//*[@id='app']/div/div[2]/div[2]/div[2]/div/div/div[1]/div[1]/div/div[2]/div[1]/h2/a").click()
+        # self.locateElement("text","北京直飞札幌8天7晚自由行（登别洞爷湖+滑雪破冰船+温泉酒店+签证/保险/WiFi/精美路书/7*24小时行中保障）")
+        # 选择新打开的页面
+        self.getHandles()
+        self.print_title()
+        time.sleep(5)
+
+        # 方法1
+        # js的脚本语言，距离顶端1000px
+        self.driver.execute_script("window.scrollTo(0,500)")
+
+
+
+        # 选择日期,提交订单
+        self.locateElement("xpath",".//*[@id='app']/div/div[2]/div[2]/div[1]/div[1]/div[2]/div/div[3]/div[5]/div[3]/div[1]").click()
+        # 点击立即预订
+        self.locateElement("xpath",".//*[@id='lastminuteorderform']/input").click()
+        self.print_title()
+        time.sleep(5)
         #
         # # 填写旅客信息
         # self.locateElement("xpath",".//*[@id='tourist_firstname-0']").send_keys("黄")

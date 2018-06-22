@@ -19,4 +19,3 @@ class HomePage(Comm):
     def click_shopping(self):
         self.click_element(qyer_web.Page.shangcheng)
 
-

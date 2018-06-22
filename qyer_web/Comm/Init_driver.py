@@ -7,3 +7,4 @@ def init_driver(browers):
     driver.maximize_window()
 
     return driver
+

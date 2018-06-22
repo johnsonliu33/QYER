@@ -1,7 +1,0 @@
-{
-  "Scripts/po_OpenPage.py::Test_Process::()::test_001": true,
-  "Scripts/po_RunPage.py::Test_Process::()::test_001": true,
-  "Scripts/po_RunPage.py::Test_Process::()::test_StorePage": true,
-  "Scripts/po_RunPage.py::Test_Process::()::test_StorePage[\\u5927]": true,
-  "Scripts/po_RunPage.py::Test_Process::()::test_StorePage[\\u962a]": true
-}
