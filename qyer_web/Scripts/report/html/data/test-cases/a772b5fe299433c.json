@@ -1,0 +1,100 @@
+{
+  "uid" : "a772b5fe299433c",
+  "name" : "Test_Process.test_005",
+  "fullName" : "qyer_web.Scripts.po_Run.Test_Process.test_005",
+  "historyId" : "a209ba7b59d8fc7df699a867d45e0e23",
+  "time" : {
+    "start" : 1529849239972,
+    "stop" : 1529849251084,
+    "duration" : 11112
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "TimeoutException: Message: \n",
+  "statusTrace" : "self = <qyer_web.Scripts.po_Run.Test_Process object at 0x000001803F0A2320>\n\n    @allure.step(title='PassengerInfoPage')\n    def test_005(self):\n>       self.info.information(\"黄\",\"志伟\",\"huang\",\"zhiwei\",\"中国\",\"北京\",\"G59424083\",\"北京\",\"姚假拉\",\"15001241111\",\"15001241111@163.com\",\"yyyy\",\"备注是我们预定8张\")\n\npo_Run.py:74: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n..\\Page\\PassengerInfoPage.py:19: in information\n    self.input_text(qyer_web.Page.info_chinese_xing,chinese_xing)\n..\\Comm\\common.py:28: in input_text\n    el = self.loca_element(loc)\n..\\Comm\\common.py:14: in loca_element\n    return WebDriverWait(self.driver,timeout,poll).until(lambda  x:x.find_element(*loc))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"f197cc16ac4395edfdc29968d3a1a862\")>\nmethod = <function Comm.loca_element.<locals>.<lambda> at 0x000001803EFDF268>\nmessage = ''\n\n    def until(self, method, message=''):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n            return value is not False.\"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.time() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, 'screen', None)\n                stacktrace = getattr(exc, 'stacktrace', None)\n            time.sleep(self._poll)\n            if time.time() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\nc:\\users\\11067\\appdata\\local\\programs\\python\\python35\\lib\\site-packages\\selenium\\webdriver\\support\\wait.py:80: TimeoutException",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "TimeoutException: Message: \n",
+    "statusTrace" : "self = <qyer_web.Scripts.po_Run.Test_Process object at 0x000001803F0A2320>\n\n    @allure.step(title='PassengerInfoPage')\n    def test_005(self):\n>       self.info.information(\"黄\",\"志伟\",\"huang\",\"zhiwei\",\"中国\",\"北京\",\"G59424083\",\"北京\",\"姚假拉\",\"15001241111\",\"15001241111@163.com\",\"yyyy\",\"备注是我们预定8张\")\n\npo_Run.py:74: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n..\\Page\\PassengerInfoPage.py:19: in information\n    self.input_text(qyer_web.Page.info_chinese_xing,chinese_xing)\n..\\Comm\\common.py:28: in input_text\n    el = self.loca_element(loc)\n..\\Comm\\common.py:14: in loca_element\n    return WebDriverWait(self.driver,timeout,poll).until(lambda  x:x.find_element(*loc))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"f197cc16ac4395edfdc29968d3a1a862\")>\nmethod = <function Comm.loca_element.<locals>.<lambda> at 0x000001803EFDF268>\nmessage = ''\n\n    def until(self, method, message=''):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n            return value is not False.\"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.time() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, 'screen', None)\n                stacktrace = getattr(exc, 'stacktrace', None)\n            time.sleep(self._poll)\n            if time.time() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\nc:\\users\\11067\\appdata\\local\\programs\\python\\python35\\lib\\site-packages\\selenium\\webdriver\\support\\wait.py:80: TimeoutException",
+    "steps" : [ {
+      "name" : "PassengerInfoPage",
+      "time" : {
+        "start" : 1529849239973,
+        "stop" : 1529849251061,
+        "duration" : 11088
+      },
+      "status" : "failed",
+      "statusMessage" : "self = <qyer_web.Scripts.po_Run.Test_Process object at 0x000001803F0A2320>\n\n    @allure.step(title='PassengerInfoPage')\n    def test_005(self):\n>       self.info.information(\"黄\",\"志伟\",\"huang\",\"zhiwei\",\"中国\",\"北京\",\"G59424083\",\"北京\",\"姚假拉\",\"15001241111\",\"15001241111@163.com\",\"yyyy\",\"备注是我们预定8张\")\n\npo_Run.py:74: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n..\\Page\\PassengerInfoPage.py:19: in information\n    self.input_text(qyer_web.Page.info_chinese_xing,chinese_xing)\n..\\Comm\\common.py:28: in input_text\n    el = self.loca_element(loc)\n..\\Comm\\common.py:14: in loca_element\n    return WebDriverWait(self.driver,timeout,poll).until(lambda  x:x.find_element(*loc))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"f197cc16ac4395edfdc29968d3a1a862\")>\nmethod = <function Comm.loca_element.<locals>.<lambda> at 0x000001803EFDF268>\nmessage = ''\n\n    def until(self, method, message=''):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n            return value is not False.\"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.time() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, 'screen', None)\n                stacktrace = getattr(exc, 'stacktrace', None)\n            time.sleep(self._poll)\n            if time.time() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\nc:\\users\\11067\\appdata\\local\\programs\\python\\python35\\lib\\site-packages\\selenium\\webdriver\\support\\wait.py:80: TimeoutException",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "816e2a698c20caf0",
+      "name" : "Captured log call",
+      "source" : "816e2a698c20caf0.txt",
+      "type" : "text/plain",
+      "size" : 571
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-HN50CGA9"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "8228-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "qyer_web.Scripts.po_Run"
+  }, {
+    "name" : "testClass",
+    "value" : "qyer_web.Scripts.po_Run"
+  }, {
+    "name" : "testMethod",
+    "value" : "Test_Process.test_005"
+  }, {
+    "name" : "package",
+    "value" : "qyer_web.Scripts.po_Run"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "a772b5fe299433c.json",
+  "parameterValues" : [ ]
+}

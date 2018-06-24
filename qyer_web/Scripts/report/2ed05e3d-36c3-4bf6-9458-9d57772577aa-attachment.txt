@@ -1,0 +1,4 @@
+remote_connection.py       409 DEBUG    POST http://127.0.0.1:51108/session/f197cc16ac4395edfdc29968d3a1a862/element {"value": ".//*[@id='tourist_firstname-0']", "using": "xpath", "sessionId": "f197cc16ac4395edfdc29968d3a1a862"}
+remote_connection.py       502 DEBUG    Finished Request
+remote_connection.py       409 DEBUG    POST http://127.0.0.1:51108/session/f197cc16ac4395edfdc29968d3a1a862/element {"value": ".//*[@id='tourist_firstname-0']", "using": "xpath", "sessionId": "f197cc16ac4395edfdc29968d3a1a862"}
+remote_connection.py       502 DEBUG    Finished Request

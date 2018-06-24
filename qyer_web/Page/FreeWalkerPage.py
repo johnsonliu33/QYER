@@ -1,3 +1,4 @@
+# _*_coding:utf-8_*_
 from qyer_web.Comm.common import Comm
 import qyer_web.Page
 
@@ -15,7 +16,7 @@ class FreeWalkerPage(Comm):
 
 
 """
-1.应该可以选择任意一个月
-2.最便宜的订单，或者第一个订单
+1.自由选择旅行时间、类型
+2.选最便宜的订单，或者指定第几个订单
 """
 

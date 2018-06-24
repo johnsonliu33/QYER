@@ -1,0 +1,103 @@
+{
+  "uid" : "bb2ba29f6a0daf34",
+  "name" : "Test_Process.test_001[http://www.qyer.com/-\\u3010\\u7a77\\u6e38\\u7f51\\u3011\\u51fa\\u5883\\u6e38_\\u65c5\\u6e38\\u653b\\u7565_\\u81ea\\u52a9\\u6e38\\u653b\\u7565_\\u6e38\\u8bb0\\u653b\\u7565_\\u5883\\u5916\\u65c5\\u6e38 - \\u7a77\\u6e38\\u7f51,\\u65c5\\u9014\\u6c38\\u65e0\\u7a77\\u5c3d-\\u3010\\u7a77\\u6e38\\u5546\\u57ce\\u3011\\u673a\\u52a0\\u9152\\u81ea\\u7531\\u884c\\u7279\\u4ef7\\u63a8\\u8350_\\u57ce\\u5e02\\u73a9\\u4e50\\u5f53\\u5730\\u6e38\\u56e2\\u8d2d\\u4fc3\\u9500\\u4f18\\u60e0 - \\u7a77\\u6e38\\u6298\\u6263,\\u4e00\\u8d77\\u53d1\\u73b0\\u6700\\u4e16\\u754c!]",
+  "fullName" : "qyer_web.Scripts.po_Run.Test_Process.test_001[http://www.qyer.com/-\\u3010\\u7a77\\u6e38\\u7f51\\u3011\\u51fa\\u5883\\u6e38_\\u65c5\\u6e38\\u653b\\u7565_\\u81ea\\u52a9\\u6e38\\u653b\\u7565_\\u6e38\\u8bb0\\u653b\\u7565_\\u5883\\u5916\\u65c5\\u6e38 - \\u7a77\\u6e38\\u7f51,\\u65c5\\u9014\\u6c38\\u65e0\\u7a77\\u5c3d-\\u3010\\u7a77\\u6e38\\u5546\\u57ce\\u3011\\u673a\\u52a0\\u9152\\u81ea\\u7531\\u884c\\u7279\\u4ef7\\u63a8\\u8350_\\u57ce\\u5e02\\u73a9\\u4e50\\u5f53\\u5730\\u6e38\\u56e2\\u8d2d\\u4fc3\\u9500\\u4f18\\u60e0 - \\u7a77\\u6e38\\u6298\\u6263,\\u4e00\\u8d77\\u53d1\\u73b0\\u6700\\u4e16\\u754c!]",
+  "historyId" : "daa2908e47b2d2b1c717f35c17b66b55",
+  "time" : {
+    "start" : 1529849210624,
+    "stop" : 1529849220109,
+    "duration" : 9485
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "HomePage",
+      "time" : {
+        "start" : 1529849214205,
+        "stop" : 1529849220109,
+        "duration" : 5904
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "577dd12896192121",
+        "name" : "描述",
+        "source" : "577dd12896192121.txt",
+        "type" : "text/plain",
+        "size" : 27
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "752844c6a4c8afc1",
+      "name" : "Captured log call",
+      "source" : "752844c6a4c8afc1.txt",
+      "type" : "text/plain",
+      "size" : 1298
+    }, {
+      "uid" : "c00b7ac8262d1dd4",
+      "name" : "Captured log setup",
+      "source" : "c00b7ac8262d1dd4.txt",
+      "type" : "text/plain",
+      "size" : 813
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-HN50CGA9"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "8228-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "qyer_web.Scripts.po_Run"
+  }, {
+    "name" : "testClass",
+    "value" : "qyer_web.Scripts.po_Run"
+  }, {
+    "name" : "testMethod",
+    "value" : "Test_Process.test_001[http://www.qyer.com/-\\u3010\\u7a77\\u6e38\\u7f51\\u3011\\u51fa\\u5883\\u6e38_\\u65c5\\u6e38\\u653b\\u7565_\\u81ea\\u52a9\\u6e38\\u653b\\u7565_\\u6e38\\u8bb0\\u653b\\u7565_\\u5883\\u5916\\u65c5\\u6e38 - \\u7a77\\u6e38\\u7f51,\\u65c5\\u9014\\u6c38\\u65e0\\u7a77\\u5c3d-\\u3010\\u7a77\\u6e38\\u5546\\u57ce\\u3011\\u673a\\u52a0\\u9152\\u81ea\\u7531\\u884c\\u7279\\u4ef7\\u63a8\\u8350_\\u57ce\\u5e02\\u73a9\\u4e50\\u5f53\\u5730\\u6e38\\u56e2\\u8d2d\\u4fc3\\u9500\\u4f18\\u60e0 - \\u7a77\\u6e38\\u6298\\u6263,\\u4e00\\u8d77\\u53d1\\u73b0\\u6700\\u4e16\\u754c!]"
+  }, {
+    "name" : "package",
+    "value" : "qyer_web.Scripts.po_Run"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "bb2ba29f6a0daf34.json",
+  "parameterValues" : [ ]
+}

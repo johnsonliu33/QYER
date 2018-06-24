@@ -1,3 +1,4 @@
+# _*_coding:utf-8_*_
 import time
 import allure
 from selenium.webdriver.support.wait import WebDriverWait
@@ -36,6 +37,16 @@ class Comm(object):
             allure.attach('错误截图',f.read(),allure.attach_type.PNG)
 
 
+    # 获取句柄，返回第二个
+    def getHandles(self):
+        handles = self.driver.window_handles
+        # print("打印handles：", handles)
+        # handles索引从0开始
+        self.driver.switch_to.window(handles[1])
+
+    #屏幕滑动
+    def scroll(self):
+        self.driver.execute_script("window.scrollTo(0,500)")
 
 
 

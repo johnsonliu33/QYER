@@ -1,3 +1,4 @@
+# _*_coding:utf-8_*_
 def init_driver(browers):
     # 创建一个浏览器
     driver = browers()

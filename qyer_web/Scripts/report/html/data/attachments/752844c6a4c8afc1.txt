@@ -1,0 +1,10 @@
+remote_connection.py       409 DEBUG    POST http://127.0.0.1:51108/session/f197cc16ac4395edfdc29968d3a1a862/url {"url": "http://www.qyer.com/", "sessionId": "f197cc16ac4395edfdc29968d3a1a862"}
+remote_connection.py       502 DEBUG    Finished Request
+remote_connection.py       409 DEBUG    GET http://127.0.0.1:51108/session/f197cc16ac4395edfdc29968d3a1a862/title {"sessionId": "f197cc16ac4395edfdc29968d3a1a862"}
+remote_connection.py       502 DEBUG    Finished Request
+remote_connection.py       409 DEBUG    POST http://127.0.0.1:51108/session/f197cc16ac4395edfdc29968d3a1a862/element {"value": ".//*[@id='app']/div/div[2]/div[1]/header/div/div[1]/ul/li[5]/a/span[1]", "using": "xpath", "sessionId": "f197cc16ac4395edfdc29968d3a1a862"}
+remote_connection.py       502 DEBUG    Finished Request
+remote_connection.py       409 DEBUG    POST http://127.0.0.1:51108/session/f197cc16ac4395edfdc29968d3a1a862/element/0.5376053111969541-1/click {"sessionId": "f197cc16ac4395edfdc29968d3a1a862", "id": "0.5376053111969541-1"}
+remote_connection.py       502 DEBUG    Finished Request
+remote_connection.py       409 DEBUG    GET http://127.0.0.1:51108/session/f197cc16ac4395edfdc29968d3a1a862/title {"sessionId": "f197cc16ac4395edfdc29968d3a1a862"}
+remote_connection.py       502 DEBUG    Finished Request

@@ -1,3 +1,4 @@
+# _*_coding:utf-8_*_
 from qyer_web.Comm.common import Comm
 import qyer_web.Page
 

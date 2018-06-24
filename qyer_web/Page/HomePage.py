@@ -1,4 +1,4 @@
-# 导入定位元素
+# _*_coding:utf-8_*_
 import qyer_web.Page
 # 继承Comm
 from qyer_web.Comm.common import Comm

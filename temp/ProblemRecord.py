@@ -23,37 +23,29 @@ nwe：性别、证件类型
 from selenium import webdriver
 from selenium.webdriver import ActionChains
 import time
-from selenium.webdriver.support.ui import Select
-from selenium.webdriver.support.select import Select
-from qyer.Comm.tools import MyTools
-
-driver = webdriver.Firefox()
-# driver.get("http://z.qyer.com/all_1_1000003_14_8616_158,146_0_0/?keyword=%E6%97%A5%E6%9C%AC")
-# p_list = driver.find_elements_by_class_name("zw-module-bigcard-h2ul-wrap")
-# p_text = []
-# for i in p_list:
-#     p_text.append(i.text)
-#
-# p_list[1].click()
-driver.get("http://z.QYER.com/deal/111075/?direct=477958")
 
 
-# 选择日期,提交订单
-driver.find_element_by_xpath(".//*[@id='app']/div/div[2]/div/div[1]/div[1]/div[2]/div/div[1]/div[2]").click()
-driver.find_element_by_xpath(".//*[@id='app']/div/div[2]/div/div[1]/div[1]/div[2]/div/div[3]/div[4]/div[5]/div[1]").click()
-driver.find_element_by_xpath(".//*[@id='lastminuteorderform']/input").click()
+driver = webdriver.Chrome()
+driver.maximize_window()
+driver.get("http://z.qyer.com/deal/107249/?direct=568152")
 
-
-
-#js的脚本语言，距离顶端1000px
+# #js的脚本语言，距离顶端1000px
 js="window.scrollTo(0,500)"
 # 运行js
 driver.execute_script(js)
 
+# 选择日期,提交订单
+driver.find_element_by_xpath(".//*[@id='app']/div/div[2]/div[2]/div[1]/div[2]/div[2]/div[2]/div/div/input").click()
+for i in range(2):
+    driver.find_element_by_xpath("html/body/div[3]/div[1]/div/div[1]/button[4]").click()
+    time.sleep(2)
+
+driver.find_element_by_xpath("html/body/div[3]/div[1]/div/div[2]/table[1]/tbody/tr[5]/td[5]/div/span").click()
+
 
 
 # 定位护照等失败
-driver.find_element_by_css_selector("#tourist_identity_type-0").click()
+# driver.find_element_by_css_selector("#tourist_identity_type-0").click()
 
 
 # el_list = driver.find_elements_by_css_selector(".qui-inputAutocomplete-ul>li")
@@ -69,7 +61,6 @@ for el in el_list:
     ActionChains(driver).move_to_element(el).perform()
     time.sleep(1)
 
-# driver.find_element_by_xpath("html/body/div[2]/div[2]/div[5]/div/div[2]/ul/li/ul/li[10]/div/div/div[2]/ul/li[1]").click()
-#
-driver.find_element_by_xpath( ".//*[@id='tourist_identity_num-0']").send_keys("110222198401262222")
+
+
 # driver.quit()

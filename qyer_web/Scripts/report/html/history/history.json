@@ -1,0 +1,99 @@
+{
+  "a209ba7b59d8fc7df699a867d45e0e23" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a772b5fe299433c",
+      "status" : "failed",
+      "statusDetails" : "TimeoutException: Message: \n",
+      "time" : {
+        "start" : 1529849239972,
+        "stop" : 1529849251084,
+        "duration" : 11112
+      }
+    } ]
+  },
+  "735a94a138e156254532c03c778b6197" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fdf62f26fdfe5e38",
+      "status" : "passed",
+      "time" : {
+        "start" : 1529849221682,
+        "stop" : 1529849224014,
+        "duration" : 2332
+      }
+    } ]
+  },
+  "daa2908e47b2d2b1c717f35c17b66b55" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "bb2ba29f6a0daf34",
+      "status" : "passed",
+      "time" : {
+        "start" : 1529849210624,
+        "stop" : 1529849220109,
+        "duration" : 9485
+      }
+    } ]
+  },
+  "e174440b930d094acc695d2f1de92833" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b864c8002f701289",
+      "status" : "passed",
+      "time" : {
+        "start" : 1529849220118,
+        "stop" : 1529849221673,
+        "duration" : 1555
+      }
+    } ]
+  },
+  "2a643893bcdf364ed84b6114d4c53472" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "693aeed1ff63694b",
+      "status" : "failed",
+      "statusDetails" : "WebDriverException: Message: unknown error: Element <input data-bn-ipg=\"lm-detail-booking-main\" type=\"submit\" class=\"_2zesKXWckzwAzcwWqgX4SF_0\" value=\"立即预订\"> is not clickable at point (1131, 545). Other element would receive the click: <div class=\"q-footer-banner\">...</div>\n  (Session info: chrome=63.0.3239.108)\n  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.17134 x86_64)\n",
+      "time" : {
+        "start" : 1529849224018,
+        "stop" : 1529849239969,
+        "duration" : 15951
+      }
+    } ]
+  }
+}

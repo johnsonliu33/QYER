@@ -1,0 +1,315 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1529849210624" stop="1529849251084">
+  <name>qyer_web.Scripts.po_Run</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1529849210624" status="passed" stop="1529849220109">
+      <name>Test_Process.test_001[http://www.qyer.com/-\u3010\u7a77\u6e38\u7f51\u3011\u51fa\u5883\u6e38_\u65c5\u6e38\u653b\u7565_\u81ea\u52a9\u6e38\u653b\u7565_\u6e38\u8bb0\u653b\u7565_\u5883\u5916\u65c5\u6e38 - \u7a77\u6e38\u7f51,\u65c5\u9014\u6c38\u65e0\u7a77\u5c3d-\u3010\u7a77\u6e38\u5546\u57ce\u3011\u673a\u52a0\u9152\u81ea\u7531\u884c\u7279\u4ef7\u63a8\u8350_\u57ce\u5e02\u73a9\u4e50\u5f53\u5730\u6e38\u56e2\u8d2d\u4fc3\u9500\u4f18\u60e0 - \u7a77\u6e38\u6298\u6263,\u4e00\u8d77\u53d1\u73b0\u6700\u4e16\u754c!]</name>
+      <attachments>
+        <attachment source="74e3efbb-03ab-48d6-8b5f-c652da597e90-attachment.txt" title="Captured log call" type="text/plain"/>
+        <attachment source="81b973be-2691-4d79-baa7-72054fc800a6-attachment.txt" title="Captured log setup" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="8228-MainThread"/>
+        <label name="host" value="LAPTOP-HN50CGA9"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1529849214205" status="passed" stop="1529849220109">
+          <name>HomePage</name>
+          <title>HomePage</title>
+          <attachments>
+            <attachment source="51fa9df7-c236-4178-9325-f6df60989805-attachment.txt" title="描述" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1529849220118" status="passed" stop="1529849221673">
+      <name>Test_Process.test_002</name>
+      <attachments>
+        <attachment source="b65d2dee-df95-4c08-8cd4-e7743901e9c7-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="8228-MainThread"/>
+        <label name="host" value="LAPTOP-HN50CGA9"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1529849220120" status="passed" stop="1529849221673">
+          <name>StorePage</name>
+          <title>StorePage</title>
+          <attachments>
+            <attachment source="19690f3c-67a0-4139-b4f1-420fbb278f46-attachment.txt" title="描述" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1529849221682" status="passed" stop="1529849224014">
+      <name>Test_Process.test_003</name>
+      <attachments>
+        <attachment source="2a71877a-3555-47b4-a934-601469f6e0a9-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="8228-MainThread"/>
+        <label name="host" value="LAPTOP-HN50CGA9"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1529849221683" status="passed" stop="1529849224014">
+          <name>FreeWalkerPage</name>
+          <title>FreeWalkerPage</title>
+          <attachments>
+            <attachment source="cb7f2464-1605-4d9f-a064-d26c75f9307a-attachment.txt" title="描述" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1529849224018" status="failed" stop="1529849239969">
+      <name>Test_Process.test_004</name>
+      <failure>
+        <message>WebDriverException: Message: unknown error: Element &lt;input data-bn-ipg="lm-detail-booking-main" type="submit" class="_2zesKXWckzwAzcwWqgX4SF_0" value="立即预订"&gt; is not clickable at point (1131, 545). Other element would receive the click: &lt;div class="q-footer-banner"&gt;...&lt;/div&gt;
+  (Session info: chrome=63.0.3239.108)
+  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.17134 x86_64)
+</message>
+        <stack-trace>self = &lt;qyer_web.Scripts.po_Run.Test_Process object at 0x000001803EF788D0&gt;
+
+    @allure.step(title='OrderPage')
+    def test_004(self):
+        self.order.confirm_month()
+        self.order.confirm_day()
+&gt;       self.order.confirm_submit()
+
+po_Run.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\Page\OrderPage.py:21: in confirm_submit
+    self.click_element(qyer_web.Page.conf_submit)
+..\Comm\common.py:23: in click_element
+    self.loca_element(loc).click()
+c:\users\11067\appdata\local\programs\python\python35\lib\site-packages\selenium\webdriver\remote\webelement.py:74: in click
+    self._execute(Command.CLICK_ELEMENT)
+c:\users\11067\appdata\local\programs\python\python35\lib\site-packages\selenium\webdriver\remote\webelement.py:457: in _execute
+    return self._parent.execute(command, params)
+c:\users\11067\appdata\local\programs\python\python35\lib\site-packages\selenium\webdriver\remote\webdriver.py:233: in execute
+    self.error_handler.check_response(response)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x000001803EF60908&gt;
+response = {'sessionId': 'f197cc16ac4395edfdc29968d3a1a862', 'status': 13, 'value': {'message': 'unknown error: Element &lt;input da...ver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.17134 x86_64)'}}
+
+    def check_response(self, response):
+        """
+            Checks that a JSON response from the WebDriver does not have an error.
+    
+            :Args:
+             - response - The JSON response from the WebDriver server as a dictionary
+               object.
+    
+            :Raises: If the response contains an error message.
+            """
+        status = response.get('status', None)
+        if status is None or status == ErrorCode.SUCCESS:
+            return
+    
+        value = None
+        message = response.get("message", "")
+        screen = response.get("screen", "")
+        stacktrace = None
+        if isinstance(status, int):
+            value_json = response.get('value', None)
+            if value_json and isinstance(value_json, basestring):
+                import json
+                try:
+                    value = json.loads(value_json)
+                    status = value.get('error', None)
+                    if status is None:
+                        status = value["status"]
+                        message = value["value"]
+                        if not isinstance(message, basestring):
+                            value = message
+                            try:
+                                message = message['message']
+                            except TypeError:
+                                message = None
+                    else:
+                        message = value.get('message', None)
+                except ValueError:
+                    pass
+    
+        exception_class = ErrorInResponseException
+        if status in ErrorCode.NO_SUCH_ELEMENT:
+            exception_class = NoSuchElementException
+        elif status in ErrorCode.NO_SUCH_FRAME:
+            exception_class = NoSuchFrameException
+        elif status in ErrorCode.NO_SUCH_WINDOW:
+            exception_class = NoSuchWindowException
+        elif status in ErrorCode.STALE_ELEMENT_REFERENCE:
+            exception_class = StaleElementReferenceException
+        elif status in ErrorCode.ELEMENT_NOT_VISIBLE:
+            exception_class = ElementNotVisibleException
+        elif status in ErrorCode.INVALID_ELEMENT_STATE:
+            exception_class = InvalidElementStateException
+        elif status in ErrorCode.INVALID_SELECTOR \
+                or status in ErrorCode.INVALID_XPATH_SELECTOR \
+                or status in ErrorCode.INVALID_XPATH_SELECTOR_RETURN_TYPER:
+            exception_class = InvalidSelectorException
+        elif status in ErrorCode.ELEMENT_IS_NOT_SELECTABLE:
+            exception_class = ElementNotSelectableException
+        elif status in ErrorCode.INVALID_COOKIE_DOMAIN:
+            exception_class = WebDriverException
+        elif status in ErrorCode.UNABLE_TO_SET_COOKIE:
+            exception_class = WebDriverException
+        elif status in ErrorCode.TIMEOUT:
+            exception_class = TimeoutException
+        elif status in ErrorCode.SCRIPT_TIMEOUT:
+            exception_class = TimeoutException
+        elif status in ErrorCode.UNKNOWN_ERROR:
+            exception_class = WebDriverException
+        elif status in ErrorCode.UNEXPECTED_ALERT_OPEN:
+            exception_class = UnexpectedAlertPresentException
+        elif status in ErrorCode.NO_ALERT_OPEN:
+            exception_class = NoAlertPresentException
+        elif status in ErrorCode.IME_NOT_AVAILABLE:
+            exception_class = ImeNotAvailableException
+        elif status in ErrorCode.IME_ENGINE_ACTIVATION_FAILED:
+            exception_class = ImeActivationFailedException
+        elif status in ErrorCode.MOVE_TARGET_OUT_OF_BOUNDS:
+            exception_class = MoveTargetOutOfBoundsException
+        else:
+            exception_class = WebDriverException
+        if value == '' or value is None:
+            value = response['value']
+        if isinstance(value, basestring):
+            if exception_class == ErrorInResponseException:
+                raise exception_class(response, value)
+            raise exception_class(value)
+        if message == "" and 'message' in value:
+            message = value['message']
+    
+        screen = None
+        if 'screen' in value:
+            screen = value['screen']
+    
+        stacktrace = None
+        if 'stackTrace' in value and value['stackTrace']:
+            stacktrace = []
+            try:
+                for frame in value['stackTrace']:
+                    line = self._value_or_default(frame, 'lineNumber', '')
+                    file = self._value_or_default(frame, 'fileName', '&lt;anonymous&gt;')
+                    if line:
+                        file = "%s:%s" % (file, line)
+                    meth = self._value_or_default(frame, 'methodName', '&lt;anonymous&gt;')
+                    if 'className' in frame:
+                        meth = "%s.%s" % (frame['className'], meth)
+                    msg = "    at %s (%s)"
+                    msg = msg % (meth, file)
+                    stacktrace.append(msg)
+            except TypeError:
+                pass
+        if exception_class == ErrorInResponseException:
+            raise exception_class(response, message)
+        elif exception_class == UnexpectedAlertPresentException and 'alert' in value:
+            raise exception_class(message, screen, stacktrace, value['alert'].get('text'))
+&gt;       raise exception_class(message, screen, stacktrace)
+E       selenium.common.exceptions.WebDriverException: Message: unknown error: Element &lt;input data-bn-ipg="lm-detail-booking-main" type="submit" class="_2zesKXWckzwAzcwWqgX4SF_0" value="立即预订"&gt; is not clickable at point (1131, 545). Other element would receive the click: &lt;div class="q-footer-banner"&gt;...&lt;/div&gt;
+E         (Session info: chrome=63.0.3239.108)
+E         (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.17134 x86_64)
+
+c:\users\11067\appdata\local\programs\python\python35\lib\site-packages\selenium\webdriver\remote\errorhandler.py:194: WebDriverException</stack-trace>
+      </failure>
+      <attachments>
+        <attachment source="b0ddff32-23cb-4386-8ca6-acb20585857e-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="8228-MainThread"/>
+        <label name="host" value="LAPTOP-HN50CGA9"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1529849224019" status="failed" stop="1529849239893">
+          <name>OrderPage</name>
+          <title>OrderPage</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1529849239972" status="failed" stop="1529849251084">
+      <name>Test_Process.test_005</name>
+      <failure>
+        <message>TimeoutException: Message: 
+</message>
+        <stack-trace>self = &lt;qyer_web.Scripts.po_Run.Test_Process object at 0x000001803F0A2320&gt;
+
+    @allure.step(title='PassengerInfoPage')
+    def test_005(self):
+&gt;       self.info.information("黄","志伟","huang","zhiwei","中国","北京","G59424083","北京","姚假拉","15001241111","15001241111@163.com","yyyy","备注是我们预定8张")
+
+po_Run.py:74: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\Page\PassengerInfoPage.py:19: in information
+    self.input_text(qyer_web.Page.info_chinese_xing,chinese_xing)
+..\Comm\common.py:28: in input_text
+    el = self.loca_element(loc)
+..\Comm\common.py:14: in loca_element
+    return WebDriverWait(self.driver,timeout,poll).until(lambda  x:x.find_element(*loc))
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;selenium.webdriver.support.wait.WebDriverWait (session="f197cc16ac4395edfdc29968d3a1a862")&gt;
+method = &lt;function Comm.loca_element.&lt;locals&gt;.&lt;lambda&gt; at 0x000001803EFDF268&gt;
+message = ''
+
+    def until(self, method, message=''):
+        """Calls the method provided with the driver as an argument until the \
+            return value is not False."""
+        screen = None
+        stacktrace = None
+    
+        end_time = time.time() + self._timeout
+        while True:
+            try:
+                value = method(self._driver)
+                if value:
+                    return value
+            except self._ignored_exceptions as exc:
+                screen = getattr(exc, 'screen', None)
+                stacktrace = getattr(exc, 'stacktrace', None)
+            time.sleep(self._poll)
+            if time.time() &gt; end_time:
+                break
+&gt;       raise TimeoutException(message, screen, stacktrace)
+E       selenium.common.exceptions.TimeoutException: Message:
+
+c:\users\11067\appdata\local\programs\python\python35\lib\site-packages\selenium\webdriver\support\wait.py:80: TimeoutException</stack-trace>
+      </failure>
+      <attachments>
+        <attachment source="2ed05e3d-36c3-4bf6-9458-9d57772577aa-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="8228-MainThread"/>
+        <label name="host" value="LAPTOP-HN50CGA9"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1529849239973" status="failed" stop="1529849251061">
+          <name>PassengerInfoPage</name>
+          <title>PassengerInfoPage</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
